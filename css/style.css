@@ -5,7 +5,7 @@
 }
 
 body {
-  margin-top: 100px;
+  margin: 100px 0;
 }
 
 h1,
@@ -23,12 +23,12 @@ h2 {
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 20px;
   opacity: 0.7;
 }
 
 p {
-  font-size: 18px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -85,4 +85,37 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 422px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 576px) {
+  h2,
+  p {
+    text-align: center;
+  }
+  .app-link {
+    margin: 0 20px;
+    text-align: center;
+    display: block;
+  }
+  .email-link {
+    font-size: 24px;
+  }
 }
